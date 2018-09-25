@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>BM Textfield Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <demo-view></demo-view>
+
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <script type="module">
+
+		import {LitElement, html} from '@polymer/lit-element';
+		import {BMTextfield} from '../bm-textfield.js'
+
+    class DemoView extends LitElement {
+      render() {
+        return html`
+          <bm-textfield type="number" label="Gravedad Original (OG)" outlined></bm-textfield>
+        `;
+      }
+    }
+
+    customElements.define('demo-view', DemoView);
+  </script>
+</body>
+</html>

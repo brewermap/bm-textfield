@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>bm-textfield minimal test</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/wct-browser-legacy/browser.js"></script>
+
+    <script type="module" src="../bm-textfield.js"></script>
+  </head>
+  <body>
+
+    <test-fixture id="BasicTestFixture">
+      <template>
+        <bm-textfield mood="happy"></bm-textfield>
+      </template>
+    </test-fixture>
+
+
+    <script type="module">
+      describe('bm-textfield basic test', () => {
+
+        it('using the element does not throw an error', () => {
+          const element = fixture('BasicTestFixture');
+					assert.ok(element); 
+        });
+        
+      });
+    </script>
+
+  </body>
+</html>

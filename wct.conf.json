@@ -1,0 +1,13 @@
+
+{
+  "plugins": {
+    "local": {
+      "disabled": true
+    },
+    "headless": {
+      "browsers": [
+        "chrome"
+      ]
+    }
+  }
+}
